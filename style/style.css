@@ -157,10 +157,11 @@ input{
     overflow: hidden;
 }
 .svg-file{
-    -webkit-animation: roundCircle 80s linear infinite; /* Chrome, Safari 5 */
-    -moz-animation: roundCircle 80s linear infinite; /* Firefox 5-15 */
-    -o-animation: roundCircle 80s linear infinite; /* Opera 12+ */
+    -moz-animation: roundCircle 80s linear infinite;
     animation: roundCircle 80s linear infinite;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
 }
 .svg-file-skills{
     position: absolute;
@@ -674,6 +675,7 @@ p{
     position: absolute;
     width: 40px;
     left: 3vw;
+    z-index: 100;
 }
 .icon.git{
 top:10vw;
