@@ -3,7 +3,7 @@
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#1d2c4d"
+        "color": "#191919"
       }
     ]
   },
@@ -11,7 +11,7 @@
     "elementType": "labels.text.fill",
     "stylers": [
       {
-        "color": "#8ec3b9"
+        "color": "#ffae3c"
       }
     ]
   },
@@ -19,7 +19,7 @@
     "elementType": "labels.text.stroke",
     "stylers": [
       {
-        "color": "#1a3646"
+        "color": "#191919"
       }
     ]
   },
@@ -34,10 +34,19 @@
   },
   {
     "featureType": "administrative.country",
-    "elementType": "geometry.stroke",
+    "elementType": "labels",
     "stylers": [
       {
-        "color": "#4b6878"
+        "color": "#bd812e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#191919"
       }
     ]
   },
@@ -64,7 +73,7 @@
     "elementType": "geometry.stroke",
     "stylers": [
       {
-        "color": "#334e87"
+        "color": "#191919"
       }
     ]
   },
@@ -73,7 +82,7 @@
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#023e58"
+        "color": "#2a2a2a"
       }
     ]
   },
