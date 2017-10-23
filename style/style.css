@@ -321,6 +321,7 @@ p{
 .layout-height-12{
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .layout-height-6{
     height: 50vh;
@@ -685,6 +686,9 @@ top:10vw;
     background-color: white;
 }
 /*Map block*/
+#map{
+    height: 100%;
+}
 .info-map:after{
     position: absolute;
     left: 83px;
