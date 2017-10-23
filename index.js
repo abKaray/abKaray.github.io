@@ -116,8 +116,6 @@ $(".inp").blur(function () {
 
 function initMap() {
     var coordinates = {lat: 47.212325, lng: 38.933663},
-        popupContent = this.$popupContent.html(),
-        markerImage = 'images/marker.png',
         zoom = 15,
 
         map = new google.maps.Map(document.getElementById('map'), {
@@ -126,23 +124,16 @@ function initMap() {
             disableDefaultUI: true
         }),
 
-        infowindow = new google.maps.InfoWindow({
-            content: popupContent
-        }),
 
         marker = new google.maps.Marker({
             position: coordinates,
-            map: map,
-            icon: markerImage
+            map: map
         });
 
-    $.getJSON("../json/map-style/map-style_colored.json", function(data) {
+    $.getJSON("./JSON/map.json", function(data) {
         map.setOptions({styles: data});
     });
 
-    google.maps.event.addListener(infowindow,'closeclick',function(){
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-    });
 
     marker.addListener('click', function () {
         marker.setAnimation(null);
@@ -152,6 +143,5 @@ function initMap() {
         infowindow.open(map, marker);
     });
 
-    infowindow.open(map, marker);
 }
 initMap();
