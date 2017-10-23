@@ -116,9 +116,42 @@ $(".inp").blur(function () {
 
 function initMap() {
     var coordinates = {lat: 47.212325, lng: 38.933663},
+        popupContent = this.$popupContent.html(),
+        markerImage = 'images/marker.png',
+        zoom = 15,
 
         map = new google.maps.Map(document.getElementById('map'), {
-            center: coordinates
+            center: coordinates,
+            zoom: zoom,
+            disableDefaultUI: true
+        }),
+
+        infowindow = new google.maps.InfoWindow({
+            content: popupContent
+        }),
+
+        marker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            icon: markerImage
         });
+
+    $.getJSON("../json/map-style/map-style_colored.json", function(data) {
+        map.setOptions({styles: data});
+    });
+
+    google.maps.event.addListener(infowindow,'closeclick',function(){
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    });
+
+    marker.addListener('click', function () {
+        marker.setAnimation(null);
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+
+    infowindow.open(map, marker);
 }
 initMap();
