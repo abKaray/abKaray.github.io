@@ -115,7 +115,7 @@ $(".inp").blur(function () {
 });
 
 function initMap() {
-    var coordinates = {lat: 47.212325, lng: 38.933663},
+    var coordinates = {lat: 50.4501, lng: 30.5234},
         zoom = 15,
 
         map = new google.maps.Map(document.getElementById('map'), {
