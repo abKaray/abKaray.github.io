@@ -122,26 +122,13 @@ function initMap() {
             center: coordinates,
             zoom: zoom,
             disableDefaultUI: true
-        }),
+        })
 
-
-        marker = new google.maps.Marker({
-            position: coordinates,
-            map: map
-        });
 
     $.getJSON("./JSON/map.json", function(data) {
         map.setOptions({styles: data});
     });
 
-
-    marker.addListener('click', function () {
-        marker.setAnimation(null);
-    });
-
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
-    });
 
 }
 initMap();
