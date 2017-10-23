@@ -1247,105 +1247,136 @@ top:10vw;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 340px) {
-    .name-sector{
+    .name-sector {
         font-size: 40px;
-        top:40%;
+        top: 40%;
     }
-    .square{
+
+    .square {
         height: 9em;
         top: 10vw;
     }
-    .inner_text{
-        left:16px;
-        top:50px;
+
+    .inner_text {
+        left: 10%;
+        top: 50px;
     }
-    .inner_text h3{
-        font-size: 2.3rem;
+
+    .inner_text h3 {
+        font-size: 1.6rem;
     }
-    .my-skill-title{
+
+    .outer-text {
+        position: absolute;
+        left: 20%;
+        margin: 0;
+    }
+
+    .my-skill-title {
         margin: 0;
         left: 2%;
         font-size: 40px;
         letter-spacing: 0;
 
     }
-    .bar-chart{
+
+    .bar-chart {
         top: 30%;
         margin: 0 0 0 2.3%;
     }
-    .lineOne{
-        top:63%;
+
+    .lineOne {
+        top: 63%;
     }
-    .lineTwo{
+
+    .lineTwo {
         bottom: 37%;
     }
-    .skill-name{
+
+    .skill-name {
         padding: 0;
     }
-    .letter{
+
+    .letter {
         font-size: 120px;
         left: 10%;
-        top:100%;
+        top: 100%;
     }
-    .letter-container{
+
+    .letter-container {
         height: 25%;
     }
-    p{
-        font-size: 1.2rem;
+
+    p {
+        font-size: 1rem;
         line-height: 1.8rem;
     }
-    .website-href{
+
+    .website-href {
         font-size: 14px;
     }
-    .my-work{
+
+    .my-work {
         left: 1%;
         letter-spacing: 0;
         top: 75%;
         font-size: 40px;
     }
-    .my-work-text{
+
+    .my-work-text {
         top: 55%;
         left: 0;
         font-size: 16px;
     }
-    .layout-height-2{
+
+    .layout-height-2 {
         height: 5vh;
     }
-    .contact-form{
-        left:0;
-        top:20%;
+
+    .contact-form {
+        left: 0;
+        top: 20%;
     }
-    .contact-letter{
+
+    .contact-letter {
         left: 2%;
         font-size: 40px;
         letter-spacing: 0;
         top: 22%;
     }
-    .inp{
+
+    .inp {
         padding: 0;
     }
-    .form-name{
+
+    .form-name {
         transform: translate(10px, 20px);
         font-size: 14px;
     }
-    .focus-bar{
-        top: 36px;
+
+    .focus-bar {
+        top: 38px;
     }
-    .text-area{
+
+    .text-area {
         min-height: 30px;
     }
-    .send-block{
+
+    .send-block {
         top: 10px;
     }
-    .send{
+
+    .send {
         padding: 5px 60px;
     }
-    .icon{
+
+    .icon {
         width: 20px;
         position: relative;
         bottom: 8px;
-        margin: 20px 10px 10px 20px;
+        margin-right: 20px;
     }
+
     .text-area {
         min-height: 90px;
     }
