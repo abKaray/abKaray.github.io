@@ -23,6 +23,9 @@ input{
     outline:none;
     -webkit-box-shadow: inset 0 0 0 50px transparent;
 }
+textarea{
+    resize: none;
+}
 /* Preloader*/
 .loader-wrapper {
     position: fixed;
