@@ -689,25 +689,17 @@ top:10vw;
 #map{
     height: 100%;
 }
-.info-map:after{
-    position: absolute;
-    left: 83px;
-    top: 99px;
-    content: "";
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 10px solid #303439;
-}
 .info-map{
     position: absolute;
-    top: 3vw;
-    left: 5vw;
+    top: 20%;
+    left: 20%;
     padding: 10px;
     background-color: #2f3338;
-    color:#9d9d9d
+    color:#9d9d9d;
+    z-index: 1;
 }
 .map-title{
-    color: #fffaaa;
+    color: #ffae3c;
 }
 
 /*Mobile*/
