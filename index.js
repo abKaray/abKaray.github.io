@@ -116,7 +116,7 @@ $(".inp").blur(function () {
 
 function initMap() {
     var coordinates = {lat: 50.4501, lng: 30.5234},
-        zoom = 15,
+        zoom = 5,
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: coordinates,
