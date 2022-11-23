@@ -1,0 +1,28 @@
+{
+  "root": true,
+
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended"
+  ],
+
+  "plugins": [
+    "import"
+  ],
+
+  "env": {
+    "browser": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+
+  "rules": {
+    "import/no-cycle": 0,
+    "no-constructor-return": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [0, {"packageDir": ["./webpack/*"]}]
+  }
+}

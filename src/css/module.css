@@ -1,0 +1,104 @@
+.fixed {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.l-0 {
+  left: 0;
+}
+
+.t-0 {
+  top: 0;
+}
+
+.r-0 {
+  right: 0;
+}
+
+.position-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.animation-translate {
+  transform: translateY(-100%);
+}
+
+.text-outline-main {
+  -webkit-text-stroke-width: 0.105rem;
+  -webkit-text-stroke-color: var(--main-color);
+  color: transparent;
+}
+
+.text-outline-second {
+  -webkit-text-stroke-width: 0.105rem;
+  -webkit-text-stroke-color: var(--second-color);
+  color: transparent;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.button-styles {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.button-animation {
+  color: var(--black-color);
+  background: 
+      linear-gradient(90deg,var(--second-color) 50%,var(--main-color) 0) 
+      var(--color-position,100%)/200% no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: .4s;
+}
+
+.button-animation:hover {
+  --color-position: 0%;
+}
+
+.will-change-transform {
+  will-change: transform;
+}

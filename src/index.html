@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Karakai Portfolio</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abkaray.github.io">
+  <meta property="og:title" content="Alex Karakai - Frontend developer">
+  <meta property="og:description" content="Portfolio of Alex Karakai, Ukraine-based frontend developer.">
+  <meta name="description" content="Portfolio of Alex Karakai, Ukraine-based frontend developer.">
+  <link rel="shortcut icon" sizes="16x16" type="image/x-icon" href="./assets/fav.png"/>
+</head>
+<body>
+  <div class="theme-curtain fixed l-0 r-0 w-full h-full animation-translate will-change-transform"></div>
+  <div class="fixed">
+    <canvas canvas class="webgl"></canvas>
+  </div>
+  <aside class="aside fixed l-0 t-0 h-full">
+    <div class="aside-container flex justify-between flex-col h-full">
+      <div class="logo overflow-hidden">
+        <svg version="1.1" class="logo-icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+          <g id="XMLID_422_">
+            <polyline id="XMLID_331_" fill="none" stroke="var(--second-color)" stroke-width="6" stroke-miterlimit="10" points="367.4,447 30.2,447 30.2,53 424.2,53 424.2,260.9 	"/>
+            <path id="XMLID_329_" fill="var(--main-color)" d="M163.3,178.4h-22.6l-30.5-42.8L99.8,146v32.4H82.1V84.1h17.6v39.6L139,84.1h24l-40.2,39.4L163.3,178.4z"/>
+            <path id="XMLID_326_" fill="var(--main-color)" d="M323.7,178.4H304l-10.3-27h-33l-9.9,27h-18.6l36.3-94.4h16.7L323.7,178.4z M288.3,136.5l-11.4-29.9
+              L266,136.5H288.3z"/>
+            <path id="XMLID_323_" fill="var(--main-color)" d="M135.3,270.6c-0.6-1.8-1.5-3.4-2.6-4.9c-1.1-1.5-2.4-2.8-3.8-3.9c-1.4-1.1-3-2-4.8-2.6
+              c-1.7-0.6-3.6-0.9-5.5-0.9H99.8v37.9H82.1V202h42.3c2.5,0,4.9,0.1,7.2,0.2c2.3,0.1,4.5,0.4,6.6,0.8c2.1,0.4,4.1,1.1,6,1.9
+              c1.9,0.9,3.7,2,5.5,3.5c3.1,2.6,5.4,5.8,7,9.6c1.5,3.8,2.3,7.6,2.3,11.6c0,5.8-1.4,10.7-4.2,14.8c-2.8,4.1-6.6,7.3-11.5,9.5
+              c2,1.5,3.9,3.5,5.5,5.8c1.6,2.4,3,5.3,4.3,8.7l10.1,27.9h-19L135.3,270.6z M99.8,242.1h23.4c3.1,0,5.8-0.2,8.1-0.6
+              c2.2-0.4,4.1-1.1,5.5-2.1c1.4-1,2.5-2.3,3.1-3.9c0.7-1.6,1-3.6,1-5.9c0-4.2-1.3-7.3-3.9-9.2c-2.6-2-6.6-2.9-12-2.9H99.8V242.1z"/>
+            <path id="XMLID_320_" fill="var(--main-color)" d="M324,294.2h-19.6l-10.3-27h-33l-9.9,27h-18.6l36.3-94.4h16.7L324,294.2z M288.6,252.3l-11.4-29.9
+              l-10.8,29.9H288.6z"/>
+            <path id="XMLID_318_" fill="var(--main-color)" d="M163.3,414.1h-22.6l-30.5-42.8l-10.5,10.4v32.4H82.1v-94.3h17.6v39.6l39.2-39.6h24l-40.2,39.4L163.3,414.1
+              z"/>
+            <path id="XMLID_22_" fill="var(--main-color)" d="M324,414.1h-19.6l-10.3-27h-33l-9.9,27h-18.6l36.3-94.4h16.7L324,414.1z M288.6,372.2l-11.4-29.9
+              l-10.8,29.9H288.6z"/>
+            <path id="XMLID_20_" fill="var(--main-color)" d="M471.8,319.8l-37.3,54.6v39.6h-17.6v-39.6l-37.4-54.6h21.3l24.9,38.1l24.8-38.1H471.8z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="personal-site overflow-hidden">
+        <p class="personal-site-text animation-translate">Personal site</p>
+      </div>
+        <div class="svg-loader flex flex-center">
+          <svg class="svg-container" height="20" width="20" viewBox="0 0 100 100">
+            <circle class="loader-svg bg" cx="50" cy="50" r="45"></circle>
+            <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+          </svg>
+      </div>
+    </div>
+  </aside>
+  <div class="theme-switcher">
+    <div class="overflow-hidden">
+      <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="dark" aria-live="polite">
+        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+          <mask class="moon" id="moon-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            <circle cx="24" cy="10" r="6" fill="black" />
+          </mask>
+          <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+          <g class="sun-beams" stroke="currentColor">
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="menu-content fixed t-0 r-0">
+    <div class="overflow-hidden">
+      <button class="menu-content-button button-styles animation-translate button-animation overflow-hidden">About me</button>
+    </div>
+  </div>
+  <main class="main-container flex flex-col justify-between fixed">
+    <div class="hero-text-container">
+      <div class="hero-text-wrapper overflow-hidden">
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">F</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">R</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">O</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">N</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">T</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">E</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">N</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">D</span>
+      </div>
+      <div class="hero-text-wrapper overflow-hidden text-outline-second">
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">D</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">E</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">V</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">E</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">L</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">O</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">P</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">E</span>
+        <span class="hero-letter will-change-transform" style="transform: translateY(-100%);">R</span>
+      </div>
+    </div>
+    <div class="hobby overflow-hidden">
+      <p class="hobby-text animation-translate">Drink coffee & dance sometimes</p>
+    </div>
+  </main>
+  <div class="about-page-container hide">
+    <main class="about-me-page" hidden>
+      <div class="cross-container fixed t-0 r-0">
+        <!-- <div class="cross-wrapper"> -->
+        <button class="button-back-text overflow-hidden button-styles button-animation">Go back</button>
+      <!-- </div> -->
+      </div>
+      <div class="main-container-title-container will-change-transform" aria-hidden="true">
+        <div class="overflow-hidden">
+          <p class="animation-translate">Ukraine - based</p>
+        </div>
+        <div class="overflow-hidden">
+          <p class="animation-translate text-outline-main">Frontend</p>
+        </div>
+        <div class="overflow-hidden">
+          <p class="animation-translate">Developer</p>
+        </div>
+      </div>
+      <div class="main-container-subtitle-container">
+        <div class="overflow-hidden flex flex-reverse">
+          <p class="subtitle-text will-change-transform">Passionate about web development, challenges. Currently learning 3D graphics with WebGL.</p>
+        </div>
+      </div>
+      <div class="experience-container">
+        <h3 class="experience-title text-outline-second">Experience</h3>
+        <ul class="experience-list">
+          <li class="experience-list-item border-bottom">
+              <p class="work-years">2021 - present</p>
+              <p>software engineer</p>
+              <p class="work-place">STAR, Kiyv</p>
+          </li>
+          <li class="experience-list-item border-bottom">
+              <p class="work-years">2018 - 2021</p>
+              <p>frontend developer </p>
+              <p class="work-place">Genesis, Kiyv</p>
+          </li>
+        </ul>
+      </div>
+      <div class="expertise-container">
+        <h3 class="experience-title text-outline-second">Expertise</h3>
+        <ul class="experience-list">
+          <li class="experience-list-item justify-between">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+              <p>React</p>
+              <p>Redux</p>
+              <p>Redux-saga</p>
+              <p>React-query</p>
+              <p>Stencil.js</p>
+              <p>Three.js</p>
+              <p>Typescript</p>
+          </li>
+        </ul>
+      </div>
+      <div class="email-container">
+        <h3 class="email-text">Say <br> <span class="text-outline-second">Hello</span></h3>
+        <p class="email">abkarakay@gmail.com</p>
+      </div>
+    </main>
+  </div>
+  <div class="loading-page w-full h-full absolute position-center">
+    <div class="loading-text-wrapper fixed overflow-hidden">
+    <p class="loading-text animation-translate will-change-transform">LOADING</p>
+  </div>
+  </div>
+</body>
+</html>
