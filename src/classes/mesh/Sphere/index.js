@@ -1,16 +1,12 @@
 import * as THREE from 'three'
 import gsap from 'gsap'
 
-// import * as dat from 'lil-gui'
-
 import App from '../../App'
 import { SPHERE_ARGS, SPHERE_POSITION } from './consts'
 
 import vertexShader from './shaders/vertex.glsl'
 import fragmentShader from './shaders/fragment.glsl'
 import { isMobileDevice } from '../../../utils'
-
-// const gui = new dat.GUI()
 
 export default class Sphere {
   constructor() {

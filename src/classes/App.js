@@ -108,8 +108,6 @@ export default class App {
   }
 
   update() {
-    // this.camera.update()
-    // this.world.update()
     this.renderer.update()
   }
 }

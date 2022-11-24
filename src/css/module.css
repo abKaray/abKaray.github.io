@@ -75,6 +75,12 @@
   color: transparent;
 }
 
+.text-outline-white {
+  color: var(--background-color);
+  -webkit-text-stroke-width: 0.105rem;
+  -webkit-text-stroke-color: var(--white-color);
+}
+
 .border-bottom {
   border-bottom: 1px solid var(--border-color);
 }

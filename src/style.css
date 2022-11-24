@@ -43,7 +43,8 @@ body {
 }
 
 .loading-text-wrapper {
-    bottom: 5%;
+    margin-bottom: 2.8rem;
+    bottom: 0;
     left: 20%;
 }
 
@@ -68,6 +69,7 @@ body {
 .aside {
     display: block;
     z-index: 1;
+    pointer-events: none;
 }
 
 .aside-container {
@@ -266,22 +268,6 @@ body {
     left: 0%;
 }
 
-.cross-wrapper {
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.cross-wrapper:hover .cross {
-    transform: rotate(90deg);
-}
-
-.line-one {
-    transform: rotate(45deg);
-}
-.line-two {
-    transform: rotate(-45deg);
-}
-
 .theme-switcher {
     position: fixed;
     bottom: 0;
@@ -361,6 +347,10 @@ body {
 
     .work-years, .work-place {
         width: 100%;
+    }
+
+    .text-outline-white {
+        -webkit-text-stroke-width: 0.05rem;
     }
 }
 

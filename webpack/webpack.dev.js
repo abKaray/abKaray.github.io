@@ -9,9 +9,6 @@ module.exports = merge(commonConfiguration, {
     level: 'warn',
   },
   devServer: {
-    // static: {
-    //   directory: path.join(__dirname, '../src'),
-    // },
     compress: true,
     port: 9000,
     open: true,
