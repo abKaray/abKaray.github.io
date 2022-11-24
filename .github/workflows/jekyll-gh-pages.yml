@@ -35,6 +35,8 @@ jobs:
           node-version: '16.15.0'
       - name: Install Dependencies
         run: npm run build
+      - name: Build Project
+        run: npm run build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
