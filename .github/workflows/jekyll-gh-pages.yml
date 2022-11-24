@@ -29,10 +29,16 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.15.0'
+      - name: Install Dependencies
+        run: npm run build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./src
+          source: ./build
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
