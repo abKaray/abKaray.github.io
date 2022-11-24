@@ -1,5 +1,6 @@
 uniform float uTime;
 uniform vec2 uMouse;
+uniform float uPointSize;
 
 varying vec2 vUv;
 varying vec3 vPosition;
@@ -124,20 +125,16 @@ vec3 curl(float	x,	float	y,	float	z)
 }
 
 void main() {
-  vUv = reference;
-  // vec3 pos = texture(positionTexture, reference).xyz;
-  vec3 newpos = position;
-   float f = 10.;
-  float amplitude = 0.9;
-  float maxDistance = 1.8;
-  vec3 target = position + curl( newpos.x * f, newpos.y * f, newpos.z * f ) * amplitude;
-  float d = length( newpos-target ) / maxDistance;
-  newpos = mix( position, target, pow( d, 4. ) );
+    vUv = reference;
+    vec3 newpos = position;
+    float f = 10.;
+    float amplitude = 0.9;
+    float maxDistance = 1.8;
+    vec3 target = position + curl( newpos.x * f, newpos.y * f, newpos.z * f ) * amplitude;
+    float d = length( newpos-target ) / maxDistance;
+    newpos = mix( position, target, pow( d, 4. ) );
 
-  // newpos.x += uMouse.x * 0.00002;
-  // newpos.y += uMouse.y * 0.00002;
-
-  vec4 mvPosition = modelViewMatrix * vec4(newpos, 1.);
-  gl_PointSize = 1.4 * (1. / -mvPosition.z);
-  gl_Position = projectionMatrix * mvPosition;
+    vec4 mvPosition = modelViewMatrix * vec4(newpos, 1.);
+    gl_PointSize = uPointSize * (1. / -mvPosition.z);
+    gl_Position = projectionMatrix * mvPosition;
 }

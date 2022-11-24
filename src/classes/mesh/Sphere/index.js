@@ -1,6 +1,7 @@
 import * as THREE from 'three'
-
 import gsap from 'gsap'
+
+// import * as dat from 'lil-gui'
 
 import App from '../../App'
 import { SPHERE_ARGS, SPHERE_POSITION } from './consts'
@@ -8,6 +9,8 @@ import { SPHERE_ARGS, SPHERE_POSITION } from './consts'
 import vertexShader from './shaders/vertex.glsl'
 import fragmentShader from './shaders/fragment.glsl'
 import { isMobileDevice } from '../../../utils'
+
+// const gui = new dat.GUI()
 
 export default class Sphere {
   constructor() {
@@ -17,6 +20,7 @@ export default class Sphere {
     this.mouseY = 0
     this.scene = this.app.scene
     this.camera = this.app.camera
+    this.pointSize = 1.4
 
     this.createGeometry()
     this.createMaterial()
@@ -30,6 +34,7 @@ export default class Sphere {
     this.material.uniforms.uTime.value = this.app.time.elapsedTime
     this.material.uniforms.uMouse.value.x = -this.mouseX
     this.material.uniforms.uMouse.value.y = this.mouseY
+    this.material.uniforms.uPointSize.value = this.pointSize
 
     if (!this.mesh) return
 
@@ -53,6 +58,7 @@ export default class Sphere {
         positionTexture: { value: null },
         uTime: { value: 0 },
         uMouse: { value: new THREE.Vector2(this.mouseX, this.mouseY) },
+        uPointSize: { value: this.pointSize },
       },
       fragmentShader,
       vertexShader,
