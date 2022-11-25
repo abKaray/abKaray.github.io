@@ -201,12 +201,12 @@ body {
     padding: 4.5rem;
 }
 
-.experience-title {
+.about-page-title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.experience-list-item {
+.list-item {
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -245,7 +245,7 @@ body {
 }
 
 .email-container {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 }
 
 .button-back-text {
@@ -269,9 +269,9 @@ body {
 }
 
 .theme-switcher {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    /* position: fixed; */
+    /* bottom: 0;
+    right: 0; */
     padding: 4.5rem 4.5rem 2.5rem 4.5rem;
     z-index: 1;
 }
@@ -340,9 +340,16 @@ body {
         width: 350px;
     }
 
-    .experience-list-item {
+    .list-item {
         font-size: 1.4rem;
         flex-wrap: wrap;
+    }
+
+    .experience-list-item {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+        font-size: 1.4rem;
     }
 
     .work-years, .work-place {

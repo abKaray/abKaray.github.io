@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import * as THREE from 'three'
 
 import Renderer from './threejsProperties/Renderer'
@@ -20,7 +21,6 @@ export default class App {
 
     this.canvas = canvas
 
-    // Setup
     this.sizes = new Sizes()
     this.time = new Time()
     this.scene = new THREE.Scene()
@@ -45,7 +45,6 @@ export default class App {
       }
     })
 
-    // Time tick event
     this.time.on('tick', () => {
       this.renderer.customPass.uniforms.time.value = this.time.elapsedTime
 
@@ -56,11 +55,18 @@ export default class App {
       this.update()
     })
 
-    this.DOMNodes = this.initilizedDomNodes()
+    this.DOMNodes = this.initilizedDOMNodes()
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  initilizedDomNodes() {
+  setClickEvent(target, callback) {
+    target.addEventListener('click', callback)
+  }
+
+  setScrollEvent(target, callback) {
+    target.addEventListener('scroll', callback)
+  }
+
+  initilizedDOMNodes() {
     const loadingText = document.querySelector('.loading-text')
     const svgLoaderAnimation = document.querySelector('.loader-svg.animate')
     const svgLoaderBackground = document.querySelector('.loader-svg.bg')

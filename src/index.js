@@ -21,7 +21,7 @@ window.onload = () => {
   loadingAnimation(app)
 }
 
-app.DOMNodes.containerAboutMePage.addEventListener('scroll', () => {
+app.setScrollEvent(app.DOMNodes.containerAboutMePage, () => {
   const setCurrentVelocityScroll = setAmoutMePageMovementVelocity(app)
 
   gsap.to(app.DOMNodes.aboutMeTitleContainer, { translateY: setCurrentVelocityScroll(0.3) })
@@ -29,10 +29,6 @@ app.DOMNodes.containerAboutMePage.addEventListener('scroll', () => {
   gsap.to(app.DOMNodes.experienceContainer, { translateY: setCurrentVelocityScroll(0.2) })
 })
 
-app.DOMNodes.themeToggleButton.addEventListener('click', () => {
-  changeThemeColor(app)
-})
-
-app.DOMNodes.aboutMeButton.addEventListener('click', () => hideMainPage(app))
-
-app.DOMNodes.buttonBackToMain.addEventListener('click', () => hideAboutPage(app))
+app.setClickEvent(app.DOMNodes.themeToggleButton, () => changeThemeColor(app))
+app.setClickEvent(app.DOMNodes.aboutMeButton, () => hideMainPage(app))
+app.setClickEvent(app.DOMNodes.buttonBackToMain, () => hideAboutPage(app))

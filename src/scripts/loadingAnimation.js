@@ -32,6 +32,7 @@ export const loadingAnimation = app => {
     gsap.fromTo(app.DOMNodes.hobbyText, { translateY: `-${100}%` }, { translateY: 0 })
     gsap.fromTo(app.DOMNodes.aboutMeButton, { translateY: `-${100}%` }, { translateY: 0 })
     gsap.fromTo(app.DOMNodes.themeToggleButton, { translateY: `-${100}%` }, { translateY: 0 })
+    app.DOMNodes.containerAboutMePage.classList.remove('display-none')
   })
 
   gsap.delayedCall(7, () => {
