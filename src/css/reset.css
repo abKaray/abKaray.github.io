@@ -16,3 +16,8 @@ button {
   border: none;
   background-color: transparent;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

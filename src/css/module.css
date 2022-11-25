@@ -95,6 +95,10 @@
   font-weight: 300;
 }
 
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
 .button-animation {
   color: var(--black-color);
   background: 

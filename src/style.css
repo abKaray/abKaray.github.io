@@ -98,7 +98,6 @@ body {
 
 .hero-text-wrapper {
     font-size: 6rem;
-    text-transform: uppercase;
     white-space: nowrap;
 }
 
@@ -111,7 +110,6 @@ body {
 }
 
 .hobby-text {
-    text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 3px;
 }
@@ -148,7 +146,6 @@ body {
 .main-container-title-container {
     flex: 1;
     font-size: 4rem;
-    text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 2rem;
 }
@@ -232,8 +229,7 @@ body {
 }
 
 .email-text {
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 2.6rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
@@ -245,7 +241,7 @@ body {
 }
 
 .email-container {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
 }
 
 .button-back-text {
@@ -269,9 +265,6 @@ body {
 }
 
 .theme-switcher {
-    /* position: fixed; */
-    /* bottom: 0;
-    right: 0; */
     padding: 4.5rem 4.5rem 2.5rem 4.5rem;
     z-index: 1;
 }
@@ -281,6 +274,39 @@ body {
     mix-blend-mode: difference;
     z-index: 1;
     pointer-events: none;
+}
+
+.social-network-container {
+    margin-bottom: 7rem;
+}
+
+.social-network {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.social-network::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    background-color: var(--main-color);
+    height: 1px;
+    transition: 0.5s all;
+}
+
+.social-network:hover::after {
+    left: 0%;
+}
+
+.margin-right {
+    margin-right: 8px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
 }
 
 @media screen and (max-width: 1100px) {
